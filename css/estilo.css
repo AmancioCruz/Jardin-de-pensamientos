@@ -1,0 +1,102 @@
+@import url(colores.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    align-content: center;
+    background-color: var(--beige-arena);
+}
+
+.contenedor{
+    margin: auto;
+    width: 30vw;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    border: 1px solid var(--verde-musgo);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.contenedor-formulario{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.contenedor-formulario h1{
+    font-size: x-large;
+    text-align: center;
+    color: var(--verde-musgo);
+}
+
+.contenedor-formulario p{
+    color: var(--texto-oscuro);
+    font-weight: lighter;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+}
+
+.grupo-input, .grupo-input select{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-bottom: 5vh;
+}
+
+.grupo-input input,
+.grupo-input select{
+    padding: 5px 5px 5px 5px;
+    border: 2px solid var(--verde-hoja);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: rgba(216, 235, 200, 0.1);
+    appearance: none;
+}
+
+.grupo-input input::placeholder{
+    color: var(--texto-oscuro);
+}
+
+.grupo-input label{
+    color: var(--verde-musgo);
+    font-weight: bold;
+}
+
+.grupo-input select{
+    color: var(--texto-oscuro);
+}
+
+.contenedor-formulario button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--verde-menta);
+    color: var(--texto-oscuro);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.contenedor-formulario button:hover{
+    background-color: var(--verde-musgo);
+    transform: translateY(-2px);
+}
+    
