@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Jardin de pensamientos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>En una escala del 1 al 5 en donde 1 es nunca y 5 es siempre responde las siguientes preguntas</h2>
-    <form id="formulario-preguntas-diagnostico" class="formulario-diagnostico">
-        <!--div class="contenedor-pregunta">
-            <p class="pregunta">Aqui va el texto de la pregunta</p>
-            <input type="range" class="rango-pregunta" min="1" value="1" max="5" step="1">
-            <div class="escalas">
-                <span>1 (Nunca)</span>
-                <span>2</span>
-                <span>3 (Moderado)</span>
-                <span>4</span>
-                <span>5 (Mucho)</span>
+    <div class="contenedor-general">
+        <div class="contenedor-formulario">
+            <div class="cabecera">
+                <h1 class="titulo-formulario">Evaluación de Estrés Académico</h1>
+                <p class="objetivo-formulario">Este cuestionario tiene como objetivo identificar posibles 
+                    niveles de estrés relacionados con sus actividades académicas. Por favor, responda con sinceridad.<br>
+                    <strong>En una escala del 1 al 5 en donde 1 es nunca y 5 es siempre responde las siguientes preguntas</strong></p>
+                <hr>
             </div>
-        </div-->
-    </form>
-    <input type="button" value="Enviar" onclick="enviarRespuestas(event)">
+            <form id="formulario-preguntas-diagnostico" class="formulario-diagnostico"> 
+
+            </form>
+        <input type="button" value="Enviar" onclick="enviarRespuestas(event)">
+        <div class="aviso-privacidad">
+            <p>Sus respuestas son completamente anónimas y confidenciales. Al enviar este formulario, usted acepta nuestra <a href="#">política de privacidad</a> y el uso de sus respuestas con fines de evaluación.</p>
+        </div>
+    </div>
 </body>
 <script src="js/script.js"></script>
 </html>

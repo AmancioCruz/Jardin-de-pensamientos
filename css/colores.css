@@ -1,15 +1,29 @@
 :root {
-  /* Paleta principal */
-  --verde-hoja: #d8ebc8;
-  --verde-menta: #b5e6d9;
-  --verde-musgo: #c7d8b5;
-  --beige-arena: #f5e6d3;
-  --rosa-petalo: #f8d7da;
-  --lila-suave: #e2d4f0;
-  --azul-cielo: #d4e4f7;
-  --amarillo-sol: #f7f0c2;
-  
-  /* Colores funcionales */
-  --texto-oscuro: #3a5a40;
-  --sombra-suave: rgba(88, 129, 87, 0.1);
+  /* Colores principales */
+  --azul-sereno: #6a89cc;
+  --azul-cielo: #82ccdd;
+  --verde-fresco: #b8e994;
+  --amarillo-soleado: #f6b93b;
+  --naranja-suave: #fa983a;
+  --melocoton: #f8c291;
+  --coral: #e55039;
+  --rojo-terracota: #eb2f06;
+  --azul-profundo: #4a69bd;
+
+  /* Colores neutros */
+  --texto-oscuro: #2d3e50;
+  --texto-medio: #34495e;
+  --texto-claro: #7f8c8d;
+  --fondo: #f5f7fa;
+  --fondo-tarjeta: #ffffff;
+  --sombra-tarjeta: rgba(0, 0, 0, 0.08);
+  --sombra-hover: rgba(0, 0, 0, 0.12);
+
+  /* Tamaños y espaciados */
+  --radio-borde: 12px;
+  --relleno-tarjeta: 20px;
+  --espaciado-seccion: 50px;
+
+  /* Transiciones */
+  --transicion: all 0.3s ease;
 }

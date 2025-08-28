@@ -1,4 +1,4 @@
-
+//falta agregar restricciones
 function Comenzar(event){
     event.preventDefault();
 

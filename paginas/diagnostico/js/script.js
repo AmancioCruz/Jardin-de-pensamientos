@@ -1,16 +1,24 @@
-let preguntas = ["pregunta 1","pregunta 2"];
+let preguntas = ["¿Con qué frecuencia te has sentido abrumado(a) o has tenido pensamientos de que no podrás cumplir con todas tus obligaciones académicas (entregas, exámenes, trabajos)?",
+            "¿Con qué frecuencia has experimentado malestares físicos como dolor de cabeza, tensión muscular, fatiga excesiva o problemas de sueño relacionados con la carga de estudio?",
+            "¿Con qué frecuencia has notado que postergas (procastinas) tus actividades académicas importantes o evitas situaciones relacionadas con la escuela/universidad debido a la ansiedad que te generan?",
+            "¿Con qué frecuencia sientes que el volumen de tareas, trabajos y la dificultad de los exámenes excede tu capacidad para prepararte y realizarlos adecuadamente?",
+            "¿Con qué frecuencia, ante el exceso de trabajo académico, optas por aislarte o encerrarte en ti mismo(a) en lugar de buscar apoyo en compañeros, profesores o familia?"
+        ];
 let contenedor_preguntas = document.querySelector("#formulario-preguntas-diagnostico");
 
 function crearPregunta(){
     const escalasConfig = [
-        {valor: "1 (Nunca)"},
+        {valor: "1"},
         {valor: "2"},
-        {valor: "3 (Moderado)"},
+        {valor: "3"},
         {valor: "4"},
-        {valor: "5 (Mucho)"}
+        {valor: "5"}
     ];
 
-    preguntas.forEach(textoPregunta => {
+    preguntas.forEach((textoPregunta, index) => {
+
+        const contenedor_pregunta = crearElemento('div', {class : 'contenedor_pregunta'});
+
         const pregunta = crearElemento('label',{
             textContent: textoPregunta,
             class: 'pregunta',
@@ -35,7 +43,8 @@ function crearPregunta(){
             }));
         });
 
-        [pregunta, rango, escalas].forEach(el =>contenedor_preguntas.appendChild(el));
+        [pregunta, rango, escalas].forEach(el =>contenedor_pregunta.appendChild(el));
+        contenedor_preguntas.appendChild(contenedor_pregunta);
     });
 
 }
@@ -56,7 +65,7 @@ function crearElemento(tag, atributos = {}){
 function enviarRespuestas(event){
     event.preventDefault();
 
-    const formulario = document.querySelector("#preguntas");
+    const formulario = document.querySelector("#formulario-preguntas-diagnostico");
 
     const formData = new FormData(formulario);
 
@@ -66,3 +75,5 @@ function enviarRespuestas(event){
 }
 
 crearPregunta();
+
+console.log(localStorage.getItem("respuesta formulario"));
