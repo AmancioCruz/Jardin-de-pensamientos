@@ -71,9 +71,14 @@ function enviarRespuestas(event){
 
     const datos = Object.fromEntries(formData.entries());
 
-    console.log(datos);  
+    localStorage.setItem("Diagnostico", datos);
+    Iniciar();
+    console.log(datos); 
 }
 
 crearPregunta();
 
+function Iniciar(event){
+    window.location.href="../juego/index.html";
+}
 console.log(localStorage.getItem("respuesta formulario"));

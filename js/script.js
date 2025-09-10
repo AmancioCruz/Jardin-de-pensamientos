@@ -1,17 +1,24 @@
+import { Usuario } from "./def.js";
 //falta agregar restricciones
-function Comenzar(event){
+
+
+export function Comenzar(event){
     event.preventDefault();
-
-    const formulario = document.querySelector("#formulario-registro");
-    let formData = new FormData(formulario);
+    console.log("hola");
+    /*let datosFormulario = new FormData(formularioUsuario);
     
-    const datos = Object.fromEntries(formData.entries());
+    const datos = Object.fromEntries(datosFormulario.entries());
         
-    const json = JSON.stringify(datos);
-    
-    console.log(json);
-    
-    localStorage.setItem("respuesta formulario", json);
+    console.log(datos);
 
-    window.location.href = "../paginas/diagnostico/index.html"
+    usuarios.push(new Usuario(datos.nombre, datos.maestria, datos.semestre));
+    
+    usuarios.forEach(usuario=>{
+        usuario.ImprimirDatos();
+    });
+    
+    localStorage.setItem("Usuario JP", JSON.stringify(usuarios));*/
+
+    //window.location.href = "../paginas/diagnostico/index.html"
+    
 }

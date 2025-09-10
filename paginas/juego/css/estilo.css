@@ -1,0 +1,102 @@
+@import url("../../../css/colores.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 1500px;
+    padding: 20px;
+}
+
+.contenedor_sentimiento {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    background-color: var(--fondo-tarjeta);
+    border-radius: var(--radio-borde);
+    box-shadow: 0 4px 8px var(--sombra-tarjeta);
+    width: 100%;
+    max-width: 320px;
+    padding: var(--relleno-tarjeta);
+    transition: var(--transicion);
+}
+
+.contenedor_sentimiento:hover {
+    box-shadow: 0 6px 12px var(--sombra-hover);
+}
+
+.formulario_sentimientos {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: var(--texto-oscuro);
+    font-size: 14px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--texto-medio);
+    background-color: #f9f9f9;
+    transition: var(--transicion);
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: var(--azul-sereno);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(106, 137, 204, 0.2);
+}
+
+select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+    padding-right: 30px;
+}
+
+.enviar {
+    background-color: var(--azul-sereno);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--transicion);
+}
+
+.enviar:hover {
+    background-color: var(--azul-profundo);
+}
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

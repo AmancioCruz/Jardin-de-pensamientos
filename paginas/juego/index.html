@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Document</title>
 </head>
 <body>
-    <canvas width="100vw" height="100vh"></canvas>
+    <div class="contenedor_sentimiento">
+        <form id="formulario_sentimientos" class="formulario_sentimientos">
+            <label for="Sentimiento">¿Como te sientes?</label>
+            <input type="text" name="Sentimiento" id="sentimiento_input_texto">
+            <label for="Categoria_sentimiento">¿Como categorizarias este pensamiento?</label>
+            <select name="Categoria_sentimiento" id="Categoria_sentimiento">
+                <option disabled selected>Selecciona ...</option>
+                <option value="Negativo">Negativo</option>
+                <option value="Positivo">Positivo</option>
+            </select>
+        </form>
+        <button id="enviar" class="enviar">Enviar Pensamiento</button>
+    </div>
+    <canvas id="canvas" onclick="dibujarCirculo(event)"></canvas>
+    <div>
+
+    </div>
 </body>
+<script src="js/script.js"></script>
+<script src="js/canvas.js"></script>
 </html>

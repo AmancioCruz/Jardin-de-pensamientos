@@ -1,49 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Jardin de pensamientos</title>
+    <title>Jardin de pensamientos - Iniciar Sesión</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div class="contenedor">
         <div class="logo">Jardín de Pensamientos</div>
         
-        <h1 class="titulo-formulario">Bienvenido/a</h1>
-        <p class="descripcion">Cuéntanos sobre tu etapa académica</p>
+        <h1 class="titulo-formulario">Iniciar Sesión</h1>
+        <p class="descripcion">Ingresa a tu cuenta para continuar</p>
         
         <hr>
         
-        <form id="formulario-registro">
+        <form id="formulario-login">
             <div class="grupo-input">
                 <label for="usuario">Nombre de usuario:</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Ej: Roberto" required>
+                <input type="text" id="usuario" name="usuario" placeholder="Tu nombre de usuario" required>
             </div>
 
             <div class="grupo-input">
-                <label for="maestria">Maestría que cursas:</label>
-                <input type="text" id="maestria" name="maestria" placeholder="Nombre de la maestría" required>
-            </div>
-
-            <div class="grupo-input">
-                <label for="semestre">Semestre actual:</label>
-                <select id="semestre" name="semestre" required>
-                    <option value="" disabled selected>Selecciona...</option>
-                    <option value="1">1° Semestre</option>
-                    <option value="2">2° Semestre</option>
-                    <option value="3">3° Semestre</option>
-                    <option value="4">4° Semestre</option>
-                </select>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
             </div>
             
-            <button type="submit" onclick="Comenzar(event)">Comenzar</button>
+            <div class="grupo-botones">
+                <button type="submit" id="bt_iniciar_sesion">Iniciar Sesión</button>
+                <button type="submit" id="bt_registrarse">Registrarse</button>
+            </div>
         </form>
         
-        <p class="aviso">Al registrarte, aceptas nuestra <a href="#">política de privacidad</a></p>
+        <p class="aviso">Al iniciar sesión, aceptas nuestra <a href="#">política de privacidad</a></p>
     </div>
-    <script src="js/script.js"></script>
 </body>
+<script type="module" src="js/main.js"></script>
 </html>
